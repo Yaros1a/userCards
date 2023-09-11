@@ -1,3 +1,9 @@
+# first route '' - firstComponent
+add new cards
+
+# second route 'all' - secondComponent
+view all cards, delete all cards 
+
 # UserCards
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.2.1.
