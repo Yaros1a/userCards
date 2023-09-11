@@ -6,11 +6,11 @@ import { SecondComponent } from './components/second/second.component';
 const routes: Routes = [
   {
     path: "",
-    component: SecondComponent
+    component: FirstComponent
   },
   {
     path: "all",
-    component: FirstComponent
+    component: SecondComponent
   }
 ];
 
