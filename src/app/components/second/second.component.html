@@ -1,0 +1,45 @@
+<div *ngIf="!isLoading">
+  <div class="card-container">
+    <div>
+      <div class="container-md">
+        <div class="card" style="width: 18rem">
+          <div class="titleImg">
+            <img src="{{ profImg }}" alt="..." />
+            <div class="card-body">
+              <h3 class="card-title">{{ name }}</h3>
+            </div>
+          </div>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item">Gender: {{ gender }}</li>
+            <li class="list-group-item">Location: {{ lat }} {{ lon }}</li>
+            <li class="list-group-item">Email: {{ email }}</li>
+            <li
+              class="list-group-item"
+              style="background-color: black; color: white"
+            >
+              Weather: <img src="{{ iconURL }}" alt="" srcset="" />
+            </li>
+            <li class="list-group-item">
+              Temperature: current - {{ tempCurrent }}, min - {{ tempLowest }},
+              max - {{ tempHighest }}
+            </li>
+          </ul>
+          <div class="card-body">
+            <a href="">
+              <button
+                type="button"
+                (click)="saveData()"
+                class="btn btn-primary"
+              >
+                Save!
+              </button>
+            </a>
+            <a href="all">
+              <button type="button" class="btn btn-primary">View all...</button>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

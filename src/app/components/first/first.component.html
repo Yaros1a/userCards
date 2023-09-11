@@ -1,0 +1,41 @@
+<div *ngIf="!isLoading">
+  <div class="container-md">
+    <div *ngFor="let item of items">
+      <div class="card" style="width: 18rem">
+        <div class="titleImg">
+          <img src="{{ item.profImg }}" alt="..." />
+          <div class="card-body">
+            <h3 class="card-title">{{ item.name }}</h3>
+          </div>
+        </div>
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item">Gender: {{ item.gender }}</li>
+          <li class="list-group-item">
+            Location: {{ item.lat }}, {{ item.lon }}
+          </li>
+          <li class="list-group-item">Email: {{ item.email }}</li>
+          <li
+            class="list-group-item"
+            style="background-color: black; color: white"
+          >
+            Weather: <img src="{{ item.iconUrl }}" alt="" srcset="" />
+          </li>
+          <li class="list-group-item">
+            Temperature: current - {{ item.tempCurrent }}, min -
+            {{ item.tempLowest }}, max - {{ item.tempHighest }}
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="buttons">
+  <a href="">
+    <button type="button" class="btn btn-primary">Create new card -></button>
+  </a>
+  <a href="all">
+    <button type="button" (click)="deleteAll()" class="btn btn-primary">
+      Delete all
+    </button>
+  </a>
+</div>

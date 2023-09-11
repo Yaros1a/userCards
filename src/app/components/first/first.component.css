@@ -1,0 +1,29 @@
+.container-md {
+    display: flex !important;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+  }
+  
+  .titleImg {
+    display: flex;
+    padding: 10px;
+  }
+  
+  .container-md img {
+    border-radius: 50%;
+    width: 100px;
+  }
+  
+  .card {
+    border: 2px solid;
+    /* display: inline-block; */
+    margin: 10px;
+  }
+
+  .buttons{
+    text-align: center;
+  }
+  .buttons button {
+    margin: 10px 10px 40px;
+  }
+  
